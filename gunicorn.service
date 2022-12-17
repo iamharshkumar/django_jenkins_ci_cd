@@ -6,7 +6,7 @@ After=network.target
 [Service]
 User=root
 Group=www-data
-WorkingDirectory=/var/lib/jenkins/workspace/django_ci_cd
+WorkingDirectory=/var/lib/jenkins/workspace/django_ci_cd/django_ci_cd
 ExecStart=/var/lib/jenkins/workspace/django_ci_cd/env/bin/gunicorn --workers 3 --log-level debug --error-logfile /var/lib/jenkins/workspace/django_ci_cd/error.log --bind unix:/run/gunicorn.sock django_ci_cd.wsgi:application
 
 [Install]
