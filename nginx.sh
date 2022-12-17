@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt install nginx
+
 sudo cp -rf app.conf /etc/nginx/sites-available/django_ci_cd
 chmod 710 /var/lib/jenkins/workspace/django_ci_cd
 
