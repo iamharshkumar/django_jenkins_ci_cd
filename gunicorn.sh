@@ -12,7 +12,7 @@ echo "Migrations done"
 
 cd /var/lib/jenkins/workspace/django_ci_cd
 
-sudo cp -rf gunicorn.socket /etc/systemd/system/
+# sudo cp -rf gunicorn.socket /etc/systemd/system/
 sudo cp -rf gunicorn.service /etc/systemd/system/
 
 echo "$USER"
